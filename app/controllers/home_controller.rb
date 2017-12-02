@@ -2,8 +2,7 @@ class HomeController < ApplicationController
 
 	 protect_from_forgery with: :exception
 
-
-	id=0
+id=1
   def index
   	@treatments = Treatment.where(isDiagnosed: false)
   	@patients=Patient.all
@@ -15,12 +14,12 @@ class HomeController < ApplicationController
 
   	patient= Patient.find_by_id(params[:patient_id])
   	id=params[:patient_id]
-  	    # return redirect_to '/profilepage'
+  	return redirect to '/profilepage'
 
   	end
 
 
-  	def profilepage
+  	def profilepage 
   		@patient=Patient.find_by_id(id)
   	end
 

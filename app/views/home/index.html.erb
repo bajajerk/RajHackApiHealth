@@ -30,7 +30,7 @@
     <% @treatments.each do |treatment| %>
       <tr>
       	<% patient=@patients.find_by_id(treatment.patient_id)  %>
-        <td> <%=patient.name %>
+        <td> <%= link_to patient.name , url_for(controller: 'home', action: 'profile', :patient_id => patient.id), method: :post %> %></td>
         <td><%= patient.aadharnumber %></td>
         <td><%= patient.age %></td>
         <td><%= patient.weight %></td>
