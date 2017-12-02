@@ -5,48 +5,49 @@ class TreatmentsController < ActionController::API
         description="Symtoms:-"
 
 
-         s1= params['s1']
-        if (s1==1)
+         s1= params['s1'].to_i
+         
+        if (s1>0)
           description=description+" Headache,"
         end
 
-         s2= params['s2']
-        if (s2==1)
+         s2= params['s2'].to_i
+        if (s2>0)
           description=description+"Coughing,"
         end
 
-         s3= params['s3']
-        if (s3==1)
+         s3= params['s3'].to_i
+        if (s3>0)
           description=description+'Sneezing,'
         end
 
 
-       s4= params['s4']
-        if (s4==1)
+       s4= params['s4'].to_i
+        if (s4>0)
           description=description+'Running Nose, '
         end
 
 
-       s5= params['s5']
-        if(s5==1)
+       s5= params['s5'].to_i
+        if(s5>0)
           description=description+'Body Pain, '
         end
 
 
-         s6= params['s6']
-        if (s6==1)
+         s6= params['s6'].to_i
+        if (s6>0)
           description=description+'Stomach Ache, '
         end
 
 
-         s7= params['s1']
-        if (s7==1)
+         s7= params['s1'].to_i
+        if (s7>0)
           description=description+'Chest Pain, '
         end
 
 
-        s8=params['s8']
-        if(s8==1)
+        s8=params['s8'].to_i
+        if(s8>0)
           description=description+'Vomiting, '
         end
 
