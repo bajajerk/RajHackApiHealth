@@ -12,6 +12,8 @@ class PatientsController < ActionController::API
         newPatient.weight=params["weight"]
         newPatient.gender=params["gender"]
         newPatient.aadharnumber=params["aadharnumber"]
+        newPatient.allergy=params["allergy"]
+
         newPatient.save
 
         data={}
