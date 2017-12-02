@@ -67,7 +67,7 @@ class TreatmentsController < ActionController::API
           newTreatment.save
 
           data={}
-          data["message"]="New Treatment  #{newTreatment.description}  created"
+          data["message"]="New Treatment  #{newTreatment.description} created"
           render json:data
 
         else
