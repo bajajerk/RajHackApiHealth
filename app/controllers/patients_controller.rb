@@ -13,13 +13,15 @@ class PatientsController < ActionController::API
         newPatient.gender=params["gender"]
         newPatient.aadharnumber=params["aadharnumber"]
         newPatient.allergy=params["allergy"]
-
         newPatient.save
 
         data={}
         data["message"]="New Patient #{newPatient.name}  created"
         render json:data
   end
+
+
+
 
 
 
