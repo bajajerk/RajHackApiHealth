@@ -1,28 +1,4 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
+The problem taken up is the unavailability of doctors in the rural and remote areas. The doctors are very far away or the doctors don't pay visit to these areas, leaving the people there in the problematic condition. The conditions of the patients worsen over time due to delyed treatment or due to taking unprescribed medicines. The solution that we found during the hackathon is to setup Virtual Doctors in these remote areas and to integrate them with a dedicated mobile application. The Virtual Doctor machines will consist of Raspberry Pi integrated with various sensors which will diagnose the patient and will store the data in the mobile of the patient and hence eliminating the need of any open network connection for these machines. The diagnosis details of the patient will not be revealed to the patient in order to avoid psychological illness. There will be a website for the doctors to analyse the patients with potentially critical symptoms. If the sysmptoms are regular, the mobile application will itself prescribe the medicines to the patient. There will be supervisor logins too in the website to monitor the work of a doctor. The mobile application is designed in such a way to provide access to multiple users due to unavailabilty of large number of smartphones in these areas. 
 <tt>rake doc:app</tt>.
